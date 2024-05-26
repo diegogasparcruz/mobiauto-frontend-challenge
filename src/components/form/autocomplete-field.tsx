@@ -2,7 +2,7 @@ import { AutocompleteOption } from '@/types'
 import { Box } from '@mui/material'
 import Autocomplete from '@mui/material/Autocomplete'
 import TextField from '@mui/material/TextField'
-import useId from '@mui/material/utils/useId'
+import { useId } from 'react'
 import { Control, Controller, FieldValues, Path } from 'react-hook-form'
 
 interface AutocompleteFieldProps<
