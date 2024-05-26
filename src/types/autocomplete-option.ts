@@ -1,4 +1,4 @@
 export type AutocompleteOption = {
-  label: string 
+  label: string
   id: string
 }
