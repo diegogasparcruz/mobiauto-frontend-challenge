@@ -1,6 +1,7 @@
 import { CarProvider } from '@/contexts/car-context'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
+import { Suspense } from 'react'
 import './globals.css'
 import Favicon from '/public/favicon.png'
 
@@ -24,7 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <CarProvider>{children}</CarProvider>
+        <Suspense>
+          <CarProvider>{children}</CarProvider>
+        </Suspense>
       </body>
     </html>
   )
