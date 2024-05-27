@@ -4,7 +4,7 @@
 
 ## 📜 About
 
-The test consists of building two pages (Search and Result), where it is possible to find out the value of a vehicle. The api is at [https://deividfortuna.github.io/fipe](https://deividfortuna.github.io/fipe).
+The test consists of building two pages (Search and Result), where it is possible to find out the value of a vehicle. The API used is at [https://deividfortuna.github.io/fipe](https://deividfortuna.github.io/fipe).
 
 ## 🖥 Tecnologies and tools
 
