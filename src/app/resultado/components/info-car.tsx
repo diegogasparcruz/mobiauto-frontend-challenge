@@ -22,7 +22,7 @@ export const InfoCar = () => {
         gap: '16px',
       }}
     >
-      <h1>
+      <h2 style={{ textAlign: 'center' }}>
         Tabela Fipe:
         <span>
           {isLoading || !infoCar ? (
@@ -31,7 +31,7 @@ export const InfoCar = () => {
             ` Preço ${infoCar?.Marca} ${infoCar?.Modelo} ${infoCar?.AnoModelo}`
           )}
         </span>
-      </h1>
+      </h2>
 
       {isLoading || !infoCar ? (
         <Skeleton variant="rounded" width={130} height={40} />
@@ -43,6 +43,7 @@ export const InfoCar = () => {
             color: '#FFF',
             height: '40px',
             fontWeight: 600,
+            borderRadius: 20,
           }}
           label={infoCar?.Valor || 'R$ 0,00'}
         />
