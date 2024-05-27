@@ -14,9 +14,9 @@ export const InfoCar = () => {
         alignItems: 'center',
         justifyContent: 'center',
         width: {
-          xs: 300,
-          sm: 420,
-          md: 500,
+          xs: '300px',
+          sm: '420px',
+          md: '500px',
         },
         height: '100vh',
         gap: '16px',
@@ -26,7 +26,16 @@ export const InfoCar = () => {
         Tabela Fipe:
         <span>
           {isLoading || !infoCar ? (
-            <Skeleton variant="rounded" width={320} height={40} />
+            <Skeleton
+              variant="rounded"
+              sx={{
+                width: {
+                  xs: '300px',
+                  sm: '320px',
+                },
+                height: '40px',
+              }}
+            />
           ) : (
             ` Preço ${infoCar?.Marca} ${infoCar?.Modelo} ${infoCar?.AnoModelo}`
           )}
@@ -34,7 +43,7 @@ export const InfoCar = () => {
       </h2>
 
       {isLoading || !infoCar ? (
-        <Skeleton variant="rounded" width={130} height={40} />
+        <Skeleton variant="rounded" width="130px" height="40px" />
       ) : (
         <Chip
           sx={{
@@ -43,7 +52,7 @@ export const InfoCar = () => {
             color: '#FFF',
             height: '40px',
             fontWeight: 600,
-            borderRadius: 20,
+            borderRadius: '20px',
           }}
           label={infoCar?.Valor || 'R$ 0,00'}
         />

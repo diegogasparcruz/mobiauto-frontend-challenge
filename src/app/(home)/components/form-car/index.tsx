@@ -24,8 +24,8 @@ export const FormCar = () => {
     <Card
       sx={{
         width: {
-          xs: 300,
-          sm: 500,
+          xs: '300px',
+          sm: '500px',
         },
         padding: '30px',
         paddingBottom: '0',
