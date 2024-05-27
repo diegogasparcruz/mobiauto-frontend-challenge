@@ -1,6 +1,10 @@
 <div align="center">
-  <h1> Mobiauto front-end challenge </h1>
+  <h1> Mobiauto frontend challenge </h1>
 </div>
+
+## 📜 About
+
+The test consists of building two pages (Search and Result), where it is possible to find out the value of a vehicle. The api is at [https://deividfortuna.github.io/fipe](https://deividfortuna.github.io/fipe).
 
 ## 🖥 Tecnologies and tools
 
@@ -13,7 +17,6 @@ This project was developed using cutting edge front-end technologies.
 - [Material UI](https://mui.com/material-ui/)
 - [React Hook Form](https://react-hook-form.com/)
 - [Zod](https://zod.dev/)
-- [Jest](https://jestjs.io/pt-BR/)
 - [Eslint](https://eslint.org/) + [Prettier](https://prettier.io/) (Linter and Code Formatter)
 
 ## ❓Why did I use Context API
@@ -43,11 +46,3 @@ $ npm run dev
 ```
 
 The app will be available for access on your browser at `http://localhost:3000`
-
-**Run tests**
-
-```bash
-$ npm run test
-# or
-$ npm run test:watch
-```
