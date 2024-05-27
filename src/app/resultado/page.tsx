@@ -18,7 +18,14 @@ export default function ResultPage() {
     >
       <Box sx={{ width: '100%', display: 'flex', alignItems: 'flex-start' }}>
         <Link href="/" style={{ textDecoration: 'none' }}>
-          <Button sx={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
+          <Button
+            sx={{
+              display: 'flex',
+              gap: '4px',
+              alignItems: 'center',
+              color: '#04a48d',
+            }}
+          >
             <ArrowBackIcon sx={{ width: '20px', height: '20px' }} />
             Voltar
           </Button>
