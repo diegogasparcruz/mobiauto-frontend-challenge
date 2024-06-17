@@ -42,6 +42,7 @@ export const FormCar = () => {
           }}
         >
           <AutocompleteField
+            id="input-brand"
             name="brandCod"
             options={brandOptions}
             control={control}
@@ -51,6 +52,7 @@ export const FormCar = () => {
 
           <AutocompleteField
             name="modelCarCod"
+            id="input-model-car"
             options={modelCarOptions}
             control={control}
             placeholder="Modelos"
@@ -60,6 +62,7 @@ export const FormCar = () => {
 
           {!!modelCarWatched && (
             <AutocompleteField
+              id="input-year-model"
               name="yearModel"
               options={yearOptions}
               control={control}
