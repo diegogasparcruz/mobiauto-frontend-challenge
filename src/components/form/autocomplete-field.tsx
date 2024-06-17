@@ -15,6 +15,7 @@ interface AutocompleteFieldProps<
   placeholder?: string
   isLoading?: boolean
   isDisabled?: boolean
+  id?: string
 }
 
 export const AutocompleteField = <
@@ -27,6 +28,7 @@ export const AutocompleteField = <
   isDisabled,
   isLoading,
   placeholder,
+  id,
 }: AutocompleteFieldProps<O, TField>) => {
   const inputId = useId()
 
@@ -45,24 +47,29 @@ export const AutocompleteField = <
                     }) ?? null
                   : null
               }
-              getOptionLabel={(option) => {
-                return option.label
-              }}
+              getOptionLabel={(option) => option.label}
               onChange={(_, newValue) => {
                 onChange(newValue ? newValue.id : null)
               }}
-              id={inputId}
+              id={id || inputId}
               options={options}
               loading={isLoading}
               loadingText="Carregando..."
               disabled={isDisabled}
               noOptionsText="Nenhuma opção encontrada"
               renderInput={(params) => (
-                <TextField {...params} label={placeholder} inputRef={ref} />
+                <TextField
+                  data-id="teste"
+                  {...params}
+                  label={placeholder}
+                  inputRef={ref}
+                />
               )}
             />
             {error ? (
-              <span style={{ color: 'red' }}>{error.message}</span>
+              <span style={{ color: 'red' }} data-cy="error-message">
+                {error.message}
+              </span>
             ) : null}
           </Box>
         )

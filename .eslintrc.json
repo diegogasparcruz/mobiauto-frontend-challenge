@@ -23,6 +23,7 @@
     "react",
     "react-hooks"
   ],
+  "ignorePatterns": ["/cypress", "cypress.config.ts"],
   "rules": {
     "prettier/prettier": [
       "error",
