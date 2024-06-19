@@ -1,4 +1,4 @@
-name: Cypress Tests - Complete Project
+name: Cypress Tests
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
       - './**.yml'
 
 jobs:
-  complete-project-tests:
+  cypress-run:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +24,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: .
 
       - name: Run Cypress tests
         run: npm run cypress:headless
-        working-directory: .
