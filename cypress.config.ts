@@ -2,7 +2,7 @@ import { defineConfig } from 'cypress'
 
 export default defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://mobiauto-frontend-challenge.vercel.app',
     viewportWidth: 1360,
     viewportHeight: 720,
     setupNodeEvents(on, config) {
